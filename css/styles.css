@@ -1,0 +1,203 @@
+.inlineBlock {
+    display: inline-block;
+    vertical-align: top;
+    text-align: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    font-family:"Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family:"Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width: 72%;
+    padding: 1%;
+}
+
+.inlineBlock ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.rosie {
+    border-radius: 7px;
+}
+
+.caseStudies {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.swatch {
+    height: 250px;
+    width: 360px;
+    border: none;
+    background-color: #EFDEDC;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.title {
+    padding: 15px;
+    color: #FDFCFC;
+    text-align: center;
+    border: none;
+    border-top: none;
+    background-color: #260401;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+footer {
+    background-color: #373738;
+    height: 100px;
+    padding: 5px;
+    color: white;
+    width: 100%;
+}
+
+footer li {
+    display: inline-block;
+    margin: auto;
+}
+
+/* Start of HW 18 CSS */
+
+.flexContainer {
+    display: flex;
+}
+
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #595845;
+    border: none;
+    border-radius: 130px;
+    color: white;
+}
+
+.skill {
+    width: 33%;
+}
+
+.skill img{
+    height: 200px;
+    width: 300px;
+}
+
+.number1 {
+    grid-area: item1;
+}
+
+.number2 {
+    grid-area: item2;
+}
+
+.number3 {
+    grid-area: item3;
+}
+
+.item {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.item img{
+    border-radius: 10px;
+    background-color: #EFDEDC;
+    padding: 10px;
+}
+
+.itemText {
+    width: 370px;
+}
+
+.mySkills {
+    text-align: center;
+}
+
+.myWork h1 {
+    text-align: center;
+}
+
+.myWork h3 {
+    text-align: center;
+    padding: 15px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas: "item1 item2 item3";
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px){
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mySkills {
+        margin: auto;
+    }
+
+    .skill {
+        margin: 0 auto;
+    }
+
+    .skill img {
+        margin: 0 auto;
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
